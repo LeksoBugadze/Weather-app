@@ -1,7 +1,7 @@
 import express from "express"
 import cors from "cors"
 import dotenv from "dotenv"
-import {router} from '../routes/index.js'
+import {router} from './routes/index.js'
 import rateLimit from "express-rate-limit"
 
 dotenv.config();
