@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="main.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="./icon.png">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pixelify+Sans:wght@400..700&family=Tiny5&display=swap" rel="stylesheet">
+</head>
+<body>
+    <select name="unit" id="unit-selector">
+        <option value="metric">Metric</option>
+        <option value="imperial" >Imperial</option>
+        <option value="standard" >Kelvin</option>
+    </select>
+    <main class="wrapper">
+        <form id="submit-form" autocomplete="off">
+            <div class="input">
+                <svg class="search" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                <input type="text" id="country-input" placeholder="Adress, City or Zip Code">
+            </div>
+            <button type="submit">Get weather</button>
+        </form>
+        <h1 id="city-name"></h1>
+        <h2 id="city-coordinates"></h2>
+        <div id="output"></div>
+    </main>
+</body>
+</html>
