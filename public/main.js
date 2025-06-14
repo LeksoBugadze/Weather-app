@@ -116,7 +116,9 @@ const data=async(city,unit)=>{
 
     const data=await res.json();
     
-    if(!data||data.error){
+    if(!data||data.message==='city not found'){
+        document.getElementById('city-name').innerHTML='';
+        document.getElementById('city-coordinates').innerHTML='';
         return alert('Inputed City/Country was not found');
     }
     
