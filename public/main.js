@@ -112,9 +112,14 @@ const data=async(city,unit)=>{
     
 
     const res=await fetch(url);
+        
 
     const data=await res.json();
-
+    
+    if(!data||data.error){
+        return alert('Inputed City/Country was not found');
+    }
+    
     const array=sortDataByDate(data);
 
     cityName.textContent=`
