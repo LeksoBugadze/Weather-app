@@ -107,7 +107,7 @@ const data=async(city,unit)=>{
     }
     
     output.innerHTML=``;
-    const url=`https://weather-app-server.aleksandrebugadze.com/api?q=${city}&units=${unit}`;
+    const url=`https://weather-app-ihdgfw.fly.dev/api?q=${city}&units=${unit}`;
 
     
 
