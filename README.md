@@ -1,5 +1,7 @@
 # Weather-app
 
+[Live Demo](https://findbyip.aleksandrebugadze.com)
+
 ## Features
 
 - Search weather by city name
